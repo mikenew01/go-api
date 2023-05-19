@@ -23,9 +23,15 @@ RUN go build -o api .
 # Final stage
 FROM alpine:latest
 
+ENV GO111MODULE=on \
+    CGO_ENABLED=0 \
+    GOOS=linux \
+    GOARCH=amd64 \
+    GIN_MODE=release
+
 RUN apk --no-cache add ca-certificates
 
-WORKDIR /root/
+WORKDIR /opt/
 
 # Copy the pre-built binary from the previous stage
 COPY --from=builder /build/api .

@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"dev.azure.com/ceabr/Tech/_git/alv-omega-crm-api-clientes/configs/logger"
-	"dev.azure.com/ceabr/Tech/_git/alv-omega-crm-api-clientes/services"
+	"dev.azure.com/ceabr/Tech/_git/alv-omega-crm-api-clientes/src/configs/logger"
+	"dev.azure.com/ceabr/Tech/_git/alv-omega-crm-api-clientes/src/services"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"

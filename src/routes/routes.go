@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"dev.azure.com/ceabr/Tech/_git/alv-omega-crm-api-clientes/controllers"
+	"dev.azure.com/ceabr/Tech/_git/alv-omega-crm-api-clientes/src/controllers"
 	"github.com/gin-gonic/gin"
 )
 
